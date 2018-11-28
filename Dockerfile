@@ -17,7 +17,7 @@
 FROM alpine:latest
 MAINTAINER Richard Huang <rickypc@users.noreply.github.com>
 
-RUN apk add --no-cache bash curl dbus firefox-esr fontconfig python ttf-freefont xvfb
+RUN apk add --no-cache bash curl dbus firefox-esr fontconfig python3 ttf-freefont xvfb
 
 # Prevent time drift
 RUN ntpd -dqnp pool.ntp.org
