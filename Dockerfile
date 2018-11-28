@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.5
 MAINTAINER Richard Huang <rickypc@users.noreply.github.com>
 
 ENV TIME_ZONE Asia/Shanghai
