@@ -23,7 +23,7 @@ RUN apk add --no-cache bash curl dbus firefox-esr fontconfig python3 ttf-freefon
 RUN ntpd -dqnp pool.ntp.org
 
 # Add gecko driver
-ARG GECKODRIVER_VERSION=0.15.0
+ARG GECKODRIVER_VERSION=0.22.0
 ARG GECKODRIVER_FILE=v${GECKODRIVER_VERSION}/geckodriver-v${GECKODRIVER_VERSION}-linux64.tar.gz
 RUN curl -s -o /tmp/geckodriver.tar.gz -L \
   https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_FILE \
