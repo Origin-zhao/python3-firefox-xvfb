@@ -3,7 +3,7 @@ MAINTAINER Richard Huang <rickypc@users.noreply.github.com>
 
 ENV TIME_ZONE Asia/Shanghai
 
-RUN apk add --no-cache bash curl dbus firefox-esr fontconfig python3=3.5.6-r0 ttf-freefont gcc xvfb
+RUN apk add --no-cache bash curl libcurl dbus firefox-esr fontconfig python3=3.5.6-r0 ttf-freefont gcc xvfb
 
 # Prevent time drift
 RUN ntpd -dqnp pool.ntp.org
